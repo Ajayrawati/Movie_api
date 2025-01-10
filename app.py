@@ -7,6 +7,11 @@ app = Flask(__name__)
 
 
 
+@app.route('/',methods=['GET'])
+def base_file():
+    return send_file('static/html/index.html')
+
+
 @app.route('/api/movie/<title>', methods=['GET'])
 def fetch_movie_details(title):
     url = f"https://www.imdb.com/find/?q={title}"
