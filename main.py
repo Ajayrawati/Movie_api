@@ -9,7 +9,7 @@ def format_imdb_url(url):
     trimmed_url = url.split('?')[0]
     # Add prefix if not present
     if not trimmed_url.startswith("https://www.imdb.com/"):
-        trimmed_url = "https://www.imdb.com/" + trimmed_url
+        trimmed_url = "https://www.imdb.com" + trimmed_url
     return trimmed_url
 
 
