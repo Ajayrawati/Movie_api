@@ -50,7 +50,7 @@ def extract_info(url):
     results
 
     # Iterate through results and extract details
-    extracted_data = {}
+    extracted_data = []
     for result in results:
         title_tag = result.find('a', class_='ipc-metadata-list-summary-item__t')
         year_tag = result.find('span', class_='ipc-metadata-list-summary-item__li')
