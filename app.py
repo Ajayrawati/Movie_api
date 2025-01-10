@@ -17,6 +17,9 @@ def fetch_movie_details(title):
     )
     return response
 
+@app.route('/api/movie/horrer250',methods=['GET'])
+def fetch_top_250_horrer():
+    return send_file('static/cleanedMovieData.json')
 
 @app.route('/api/movie/top250',methods=['GET'])
 def fetch_top_250_movies():
