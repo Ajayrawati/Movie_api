@@ -84,7 +84,74 @@ GET https://movie-api-omega-three.vercel.app/api/movie/top250
 ]
 ```
 
+3. **Get Top 250 Horrer Movies**
 
+```
+GET /api/movie/horrer250
+```
+
+**Description:**  
+Fetch a list of the top 250 Horrer movies based on IMDb rankings.
+
+**Response Format:**
+
+The API will return a JSON response containing an array of top 250 horrer movies, with each movie's title, year of release, actors, and a brief description.
+
+**Example Request:**
+```
+GET https://movie-api-omega-three.vercel.app/api/movie/horrer250
+```
+
+**Example Response:**
+```json
+[
+  {
+        "title": "1. Halloween",
+        "url": "https://www.imdb.com/title/tt0077651/",
+        "description": {
+            "@type": "Movie",
+            "name": "Halloween",
+            "description": "Fifteen years after murdering his sister on Halloween night 1963, Michael Myers escapes from a mental hospital and returns to the small town of Haddonfield, Illinois, to kill again.",
+            "aggregateRating": {
+                "ratingValue": 7.7
+            },
+            "genre": [
+                "Horror",
+                "Thriller"
+            ],
+            "datePublished": "1979-12-10",
+            "director": [
+                {
+                    "name": "John Carpenter"
+                }
+            ]
+        }
+    },
+    {
+        "title": "2. The Shining",
+        "url": "https://www.imdb.com/title/tt0081505/",
+        "description": {
+            "@type": "Movie",
+            "name": "The Shining",
+            "description": "A family heads to an isolated hotel for the winter, where a sinister presence influences the father into violence. At the same time, his psychic son sees horrifying forebodings from both the past and the future.",
+            "aggregateRating": {
+                "ratingValue": 8.4
+            },
+            "genre": [
+                "Drama",
+                "Horror"
+            ],
+            "datePublished": "2017-10-04",
+            "director": [
+                {
+                    "name": "Stanley Kubrick"
+                }
+            ]
+        }
+    },
+  // More movies...
+]
+```
 
 ## License
 
