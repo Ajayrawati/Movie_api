@@ -11,7 +11,7 @@ app = Flask(__name__)
 def fetch_movie_details(title):
     url = f"https://www.imdb.com/find/?q={title}"
     movieData =extract_info(url)
-    return send_file(json.dumps(movieData,sort_keys=False,indent=4));
+    return jsonify(movieData);
 
 
 @app.route('/api/movie/top250',methods=['GET'])
