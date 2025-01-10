@@ -84,7 +84,7 @@ GET https://movie-api-omega-three.vercel.app/api/movie/top250
 ]
 ```
 
-2. **Get Top 250 Horrer Movies**
+3. **Get Top 250 Horrer Movies**
 
 ```
 GET /api/movie/horrer250
